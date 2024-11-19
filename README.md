@@ -1,4 +1,4 @@
-# EXP-6 4 KB-ROM-Memory-with-Read-and-Write-Operations
+# EXP-7 4 KB-ROM-Memory-with-Read-and-Write-Operations
 
 ## Aim:
 
