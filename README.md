@@ -1,4 +1,4 @@
-# EXP-7  4 KB-ROM-Memory-with-Read-and-Write-Operations
+# EXP-7  4 KB-ROM AND ROM-Memory-with-Read-and-Write-Operations
 
 ## Aim:
 
@@ -40,7 +40,7 @@
 
 &emsp;&emsp;Capture the waveform and include the simulation results in the final report.<br>
 
-## Verilog Code for 4KB ROM Memory with Read and Write Operations:
+## Verilog Code for 4KB RAM Memory with Read and Write Operations:
 
 &emsp;&emsp;In this design, we will implement a 4KB ROM. Since ROM is typically read-only, we will simulate the behavior as if it's writable, but in actual hardware, ROM is typically pre-programmed.<br>
 
@@ -50,7 +50,7 @@
 
 
 ```
-module rom_memory (
+module ram_memory (
     input wire clk,
     input wire write_enable,   // Signal to enable write operation
     input wire [11:0] address, // 12-bit address for 4KB memory
@@ -58,8 +58,8 @@ module rom_memory (
     output reg [7:0] data_out  // Data read from ROM
 );
 
-    // Declare ROM with 4096 memory locations (each 8 bits wide)
-    reg [7:0] rom[0:4095];
+    // Declare RAM with 4096 memory locations (each 8 bits wide)
+    reg [7:0] ram[0:4095];
 
     always @(posedge clk) begin
         if (write_enable) begin
@@ -72,7 +72,7 @@ module rom_memory (
 endmodule
 ```
 
-## Testbench for 4KB ROM Memory:
+## Testbench for 4KB RAM Memory:
 
 ```
 `timescale 1ns / 1ps
@@ -133,6 +133,8 @@ endmodule
 ## Output Waveform:
 
 ![Screenshot 2024-10-17 141913](https://github.com/user-attachments/assets/d9892720-1a48-4487-95f0-1b5407abd6e3)
+
+
 
 ## Conclusion:
 
