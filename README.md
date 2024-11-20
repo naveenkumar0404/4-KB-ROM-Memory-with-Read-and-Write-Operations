@@ -1,4 +1,4 @@
-# EXP:07 4kb RAM,8x8 ROM,FIFO Memory-with-Read-and-Write-Operations
+# EXP:7 4KB RAM,8x8 ROM,FIFO Memory-with-Read-and-Write-Operations
 ## Aim
 To design and simulate a RAM memory with read and write operations using Verilog HDL and verify the functionality through a testbench in the Vivado 2023.1 simulation environment.
 
